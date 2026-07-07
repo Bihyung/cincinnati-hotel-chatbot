@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cincinnati Hotel Information Document</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 20px;
+            background-color: #f9f9f9;
+        }
+        .container {
+            background-color: white;
+            padding: 30px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+        }
+        h1 {
+            color: #2c5aa0;
+            border-bottom: 3px solid #2c5aa0;
+            padding-bottom: 10px;
+        }
+        h2 {
+            color: #1a4480;
+            border-bottom: 2px solid #e0e0e0;
+            padding-bottom: 5px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #2c5aa0;
+            margin-top: 25px;
+        }
+        ul, ol {
+            padding-left: 20px;
+        }
+        li {
+            margin-bottom: 5px;
+        }
+        .contact-info {
+            background-color: #f0f7ff;
+            padding: 15px;
+            border-left: 4px solid #2c5aa0;
+            margin: 20px 0;
+        }
+        .rate {
+            font-weight: bold;
+            color: #d63384;
+        }
+        .hours {
+            font-style: italic;
+            color: #666;
+        }
+        hr {
+            border: none;
+            height: 2px;
+            background: linear-gradient(to right, #2c5aa0, #e0e0e0);
+            margin: 30px 0;
+        }
+        .footer {
+            text-align: center;
+            font-style: italic;
+            color: #666;
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #e0e0e0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Cincinnati Hotel Information Document (Sample)</h1>
+        
+        <p>This is a sample hotel information document for testing the Cincinnati Hotel Chatbot system.</p>
+
+        <h2>About Cincinnati Hotel</h2>
+        
+        <p>Cincinnati Hotel is a premier 4-star hotel located in the heart of downtown Cincinnati, Ohio. Established in 1995, we pride ourselves on providing exceptional service and comfortable accommodations for both business and leisure travelers.</p>
+
+        <div class="contact-info">
+            <strong>Address:</strong><br>
+            123 Main Street<br>
+            Cincinnati, OH 45202<br>
+            United States<br><br>
+            
+            <strong>Contact:</strong><br>
+            Phone: +1 (513) 555-0100<br>
+            Email: reservations@cincinnatihotel.com<br>
+            Website: www.cincinnatihotel.com
+        </div>
+
+        <hr>
+
+        <h2>Rooms & Accommodations</h2>
+
+        <h3>Standard Room</h3>
+        <ul>
+            <li>Size: 300 sq ft</li>
+            <li>Bed: 1 Queen or 2 Twin beds</li>
+            <li>Occupancy: Up to 2 adults</li>
+            <li>Rate: <span class="rate">$129/night</span></li>
+            <li>Features:
+                <ul>
+                    <li>Free Wi-Fi</li>
+                    <li>42" flat-screen TV</li>
+                    <li>Mini-fridge</li>
+                    <li>Coffee maker</li>
+                    <li>Work desk</li>
+                    <li>Private bathroom with shower</li>
+                    <li>Daily housekeeping</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Deluxe Room</h3>
+        <ul>
+            <li>Size: 400 sq ft</li>
+            <li>Bed: 1 King bed</li>
+            <li>Occupancy: Up to 2 adults + 1 child</li>
+            <li>Rate: <span class="rate">$179/night</span></li>
+            <li>Features:
+                <ul>
+                    <li>All Standard Room amenities</li>
+                    <li>City view</li>
+                    <li>Sitting area</li>
+                    <li>Sofa bed</li>
+                    <li>Premium bedding</li>
+                    <li>Bathtub with separate shower</li>
+                    <li>Complimentary bottled water</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Executive Suite</h3>
+        <ul>
+            <li>Size: 650 sq ft</li>
+            <li>Bed: 1 King bed + Sofa bed</li>
+            <li>Occupancy: Up to 4 guests</li>
+            <li>Rate: <span class="rate">$299/night</span></li>
+            <li>Features:
+                <ul>
+                    <li>All Deluxe Room amenities</li>
+                    <li>Separate living room</li>
+                    <li>Dining area</li>
+                    <li>Kitchenette with microwave</li>
+                    <li>Two bathrooms</li>
+                    <li>Access to Executive Lounge</li>
+                    <li>Complimentary breakfast</li>
+                    <li>Free parking</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Presidential Suite</h3>
+        <ul>
+            <li>Size: 1,200 sq ft</li>
+            <li>Bed: 1 King bed + 2 Queen beds (2 bedrooms)</li>
+            <li>Occupancy: Up to 6 guests</li>
+            <li>Rate: <span class="rate">$599/night</span></li>
+            <li>Features:
+                <ul>
+                    <li>All Executive Suite amenities</li>
+                    <li>Panoramic city views</li>
+                    <li>Full kitchen</li>
+                    <li>Dining room for 8</li>
+                    <li>Private terrace</li>
+                    <li>Wine cooler</li>
+                    <li>In-room safe</li>
+                    <li>Personal concierge service</li>
+                </ul>
+            </li>
+        </ul>
+
+        <hr>
+
+        <h2>Dining Options</h2>
+
+        <h3>The Cincinnati Grill (Main Restaurant)</h3>
+        <ul>
+            <li>Cuisine: American Steakhouse</li>
+            <li>Hours:
+                <ul class="hours">
+                    <li>Breakfast: 6:30 AM - 10:30 AM (Daily)</li>
+                    <li>Lunch: 11:30 AM - 2:30 PM (Mon-Fri)</li>
+                    <li>Dinner: 5:30 PM - 10:00 PM (Daily)</li>
+                </ul>
+            </li>
+            <li>Specialties: Prime steaks, fresh seafood, craft cocktails</li>
+            <li>Dress Code: Smart casual</li>
+            <li>Reservations: Recommended</li>
+        </ul>
+
+        <h3>Riverside Café</h3>
+        <ul>
+            <li>Cuisine: Casual dining, sandwiches, salads</li>
+            <li>Hours: <span class="hours">7:00 AM - 11:00 PM (Daily)</span></li>
+            <li>Features:
+                <ul>
+                    <li>Grab-and-go options</li>
+                    <li>Outdoor patio seating</li>
+                    <li>Breakfast all day</li>
+                    <li>Free Wi-Fi</li>
+                    <li>Kid-friendly menu</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Skyline Lounge (Rooftop Bar)</h3>
+        <ul>
+            <li>Type: Bar & Lounge</li>
+            <li>Hours: <span class="hours">4:00 PM - 1:00 AM (Daily)</span></li>
+            <li>Features:
+                <ul>
+                    <li>Signature cocktails</li>
+                    <li>Small plates and appetizers</li>
+                    <li>Live music (Friday & Saturday)</li>
+                    <li>Panoramic city views</li>
+                    <li>Age 21+ after 9 PM</li>
+                </ul>
+            </li>
+        </ul>
+
+        <h3>Room Service</h3>
+        <ul>
+            <li>Hours: <span class="hours">24/7</span></li>
+            <li>Delivery fee: $5</li>
+            <li>Menu: Abbreviated menu available 24/7, full menu 6 AM - 11 PM</li>
+        </ul>
+
+        <hr>
+
+        <h2>Hotel Amenities</h2>
+
+        <h3>Fitness & Wellness</h3>
+        <ul>
+            <li><strong>Fitness Center:</strong> 24/7 access, modern equipment, free weights</li>
+            <li><strong>Indoor Pool:</strong> 6 AM - 10 PM daily, heated year-round</li>
+            <li><strong>Spa Services:</strong> Massage, facials, body treatments (by appointment)</li>
+            <li><strong>Sauna & Steam Room:</strong> Located in fitness center</li>
+        </ul>
+
+        <h3>Business Facilities</h3>
+        <ul>
+            <li><strong>Business Center:</strong> 24/7 access, printing, scanning, computers</li>
+            <li><strong>Meeting Rooms:</strong> 5 rooms accommodating 10-100 people</li>
+            <li><strong>Ballroom:</strong> Capacity 300 people, catering available</li>
+            <li><strong>Free Wi-Fi:</strong> Throughout the hotel</li>
+            <li><strong>A/V Equipment:</strong> Available for rental</li>
+        </ul>
+
+        <h3>Other Amenities</h3>
+        <ul>
+            <li><strong>Valet Parking:</strong> $35/night</li>
+            <li><strong>Self-Parking:</strong> $20/night</li>
+            <li><strong>Airport Shuttle:</strong> Complimentary, scheduled service</li>
+            <li><strong>Concierge:</strong> 7 AM - 11 PM daily</li>
+            <li><strong>ATM:</strong> In lobby</li>
+            <li><strong>Gift Shop:</strong> 7 AM - 9 PM daily</li>
+            <li><strong>Laundry Service:</strong> Same-day service available</li>
+            <li><strong>Pet-Friendly:</strong> Up to 40 lbs, $50/stay fee</li>
+        </ul>
+
+        <hr>
+
+        <h2>Policies</h2>
+
+        <h3>Check-In / Check-Out</h3>
+        <ul>
+            <li><strong>Check-in:</strong> 3:00 PM</li>
+            <li><strong>Check-out:</strong> 12:00 PM (Noon)</li>
+            <li>Early check-in: Subject to availability, possible fee</li>
+            <li>Late check-out: Subject to availability, $50 after 2 PM</li>
+        </ul>
+
+        <h3>Cancellation Policy</h3>
+        <ul>
+            <li><strong>Standard Rate:</strong> Free cancellation up to 48 hours before arrival</li>
+            <li><strong>Non-Refundable Rate:</strong> No cancellations or changes allowed</li>
+            <li><strong>Group Bookings:</strong> Contact group sales for specific policies</li>
+            <li>Cancellations within 48 hours: Charge of first night's stay</li>
+        </ul>
+
+        <h3>Payment & Deposits</h3>
+        <ul>
+            <li>Credit card required at booking</li>
+            <li>$50/night incidental deposit required at check-in</li>
+            <li>Accepted cards: Visa, Mastercard, American Express, Discover</li>
+            <li>Cash accepted with additional deposit</li>
+        </ul>
+
+        <h3>Age Requirements</h3>
+        <ul>
+            <li>Guests must be 21+ to check in</li>
+            <li>Minors allowed with adult guardian</li>
+        </ul>
+
+        <h3>Smoking Policy</h3>
+        <ul>
+            <li>100% non-smoking hotel</li>
+            <li>Designated outdoor smoking areas available</li>
+            <li>$250 cleaning fee for smoking in room</li>
+        </ul>
+
+        <h3>Pet Policy</h3>
+        <ul>
+            <li>Dogs and cats welcome (up to 40 lbs)</li>
+            <li>Maximum 2 pets per room</li>
+            <li>$50 non-refundable pet fee per stay</li>
+            <li>Pets must not be left unattended in room</li>
+        </ul>
+
+        <hr>
+
+        <h2>Location & Transportation</h2>
+
+        <h3>Nearby Attractions</h3>
+        <ul>
+            <li><strong>Great American Ball Park:</strong> 0.5 miles (home of Cincinnati Reds)</li>
+            <li><strong>Fountain Square:</strong> 0.3 miles</li>
+            <li><strong>Cincinnati Music Hall:</strong> 1.2 miles</li>
+            <li><strong>Cincinnati Zoo:</strong> 3.5 miles</li>
+            <li><strong>Kings Island Amusement Park:</strong> 24 miles</li>
+            <li><strong>Newport Aquarium:</strong> 2 miles</li>
+        </ul>
+
+        <h3>Transportation</h3>
+        <ul>
+            <li><strong>Airport:</strong> Cincinnati/Northern Kentucky International Airport (CVG) - 13 miles</li>
+            <li><strong>Complimentary Airport Shuttle:</strong> Every 30 minutes, 5 AM - 11 PM</li>
+            <li><strong>Metro Bus Stop:</strong> Outside main entrance</li>
+            <li><strong>Streetcar Station:</strong> 2 blocks away</li>
+            <li><strong>Taxi Stand:</strong> At main entrance</li>
+            <li><strong>Uber/Lyft:</strong> Pickup at main entrance</li>
+        </ul>
+
+        <h3>Directions</h3>
+        <p><strong>From Airport (CVG):</strong><br>
+        Take I-275 N to I-71 N. Take exit 1 for downtown Cincinnati. Turn right on Main Street. Hotel is on the right.</p>
+
+        <p><strong>From North (via I-75):</strong><br>
+        Take I-75 S to I-71 S. Take exit 1 for downtown. Turn left on Main Street.</p>
+
+        <hr>
+
+        <h2>Special Services</h2>
+
+        <h3>Events & Conferences</h3>
+        <ul>
+            <li>15,000 sq ft of meeting space</li>
+            <li>Dedicated event coordinator</li>
+            <li>Catering packages available</li>
+            <li>A/V equipment and IT support</li>
+            <li>Breakout rooms and boardrooms</li>
+            <li>Wedding packages available</li>
+        </ul>
+
+        <h3>Group Rates</h3>
+        <ul>
+            <li>10+ rooms: 10% discount</li>
+            <li>20+ rooms: 15% discount</li>
+            <li>Contact group sales: groups@cincinnatihotel.com</li>
+        </ul>
+
+        <h3>Loyalty Program</h3>
+        <p><strong>Cincinnati Rewards Members:</strong></p>
+        <ul>
+            <li>Free Wi-Fi (standard rate for non-members)</li>
+            <li>10% discount on dining</li>
+            <li>Late checkout (2 PM, subject to availability)</li>
+            <li>Earn points: 10 points per $1 spent</li>
+            <li>Redeem: 10,000 points = free night</li>
+        </ul>
+
+        <hr>
+
+        <h2>Seasonal Information</h2>
+
+        <h3>Best Time to Visit</h3>
+        <ul>
+            <li><strong>Spring (April-May):</strong> Pleasant weather, festivals</li>
+            <li><strong>Summer (June-August):</strong> Baseball season, outdoor events</li>
+            <li><strong>Fall (September-October):</strong> Beautiful foliage, Oktoberfest</li>
+            <li><strong>Winter (November-March):</strong> Holiday events, lower rates</li>
+        </ul>
+
+        <h3>Holiday Rates</h3>
+        <p>Premium rates apply during:</p>
+        <ul>
+            <li>New Year's Eve</li>
+            <li>Cincinnati Reds opening day</li>
+            <li>Major conventions</li>
+            <li>Oktoberfest weekend</li>
+            <li>Major holidays</li>
+        </ul>
+
+        <hr>
+
+        <h2>COVID-19 Protocols</h2>
+        <ul>
+            <li>Enhanced cleaning procedures</li>
+            <li>Hand sanitizer stations throughout hotel</li>
+            <li>Social distancing markers in public areas</li>
+            <li>Contactless check-in/out available</li>
+            <li>Mobile room keys via app</li>
+            <li>Masks available upon request</li>
+        </ul>
+
+        <hr>
+
+        <h2>Contact Information</h2>
+
+        <div class="contact-info">
+            <p><strong>General Inquiries:</strong><br>
+            Phone: +1 (513) 555-0100<br>
+            Email: info@cincinnatihotel.com</p>
+
+            <p><strong>Reservations:</strong><br>
+            Phone: +1 (513) 555-0101<br>
+            Email: reservations@cincinnatihotel.com<br>
+            Hours: 24/7</p>
+
+            <p><strong>Group Sales:</strong><br>
+            Phone: +1 (513) 555-0102<br>
+            Email: groups@cincinnatihotel.com<br>
+            Hours: Mon-Fri 9 AM - 5 PM</p>
+
+            <p><strong>Events & Catering:</strong><br>
+            Phone: +1 (513) 555-0103<br>
+            Email: events@cincinnatihotel.com<br>
+            Hours: Mon-Fri 9 AM - 5 PM</p>
+
+            <p><strong>Concierge:</strong><br>
+            Phone: +1 (513) 555-0104<br>
+            Email: concierge@cincinnatihotel.com<br>
+            Hours: 7 AM - 11 PM daily</p>
+        </div>
+
+        <hr>
+
+        <h2>Awards & Recognition</h2>
+        <ul>
+            <li>TripAdvisor Certificate of Excellence (2020, 2021, 2022)</li>
+            <li>AAA Four Diamond Award</li>
+            <li>Condé Nast Traveler Readers' Choice Award</li>
+            <li>Forbes Travel Guide Recommended</li>
+            <li>Certified Green Hotel by Green Key Global</li>
+        </ul>
+
+        <div class="footer">
+            <p><em>Last Updated: June 2026</em><br>
+            <em>This is a sample document for testing purposes. All information is fictional.</em></p>
+        </div>
+    </div>
+</body>
+</html>

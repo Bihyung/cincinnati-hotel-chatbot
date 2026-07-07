@@ -1,0 +1,306 @@
+# Cincinnati Hotel Information Document (Sample)
+
+This is a sample hotel information document for testing the Cincinnati Hotel Chatbot system.
+
+## About Cincinnati Hotel
+
+Cincinnati Hotel is a premier 4-star hotel located in the heart of downtown Cincinnati, Ohio. Established in 1995, we pride ourselves on providing exceptional service and comfortable accommodations for both business and leisure travelers.
+
+**Address:**  
+123 Main Street  
+Cincinnati, OH 45202  
+United States
+
+**Contact:**  
+Phone: +1 (513) 555-0100  
+Email: reservations@cincinnatihotel.com  
+Website: www.cincinnatihotel.com
+
+---
+
+## Rooms & Accommodations
+
+### Standard Room
+- Size: 300 sq ft
+- Bed: 1 Queen or 2 Twin beds
+- Occupancy: Up to 2 adults
+- Rate: $129/night
+- Features:
+  - Free Wi-Fi
+  - 42" flat-screen TV
+  - Mini-fridge
+  - Coffee maker
+  - Work desk
+  - Private bathroom with shower
+  - Daily housekeeping
+
+### Deluxe Room
+- Size: 400 sq ft
+- Bed: 1 King bed
+- Occupancy: Up to 2 adults + 1 child
+- Rate: $179/night
+- Features:
+  - All Standard Room amenities
+  - City view
+  - Sitting area
+  - Sofa bed
+  - Premium bedding
+  - Bathtub with separate shower
+  - Complimentary bottled water
+
+### Executive Suite
+- Size: 650 sq ft
+- Bed: 1 King bed + Sofa bed
+- Occupancy: Up to 4 guests
+- Rate: $299/night
+- Features:
+  - All Deluxe Room amenities
+  - Separate living room
+  - Dining area
+  - Kitchenette with microwave
+  - Two bathrooms
+  - Access to Executive Lounge
+  - Complimentary breakfast
+  - Free parking
+
+### Presidential Suite
+- Size: 1,200 sq ft
+- Bed: 1 King bed + 2 Queen beds (2 bedrooms)
+- Occupancy: Up to 6 guests
+- Rate: $599/night
+- Features:
+  - All Executive Suite amenities
+  - Panoramic city views
+  - Full kitchen
+  - Dining room for 8
+  - Private terrace
+  - Wine cooler
+  - In-room safe
+  - Personal concierge service
+
+---
+
+## Dining Options
+
+### The Cincinnati Grill (Main Restaurant)
+- Cuisine: American Steakhouse
+- Hours:
+  - Breakfast: 6:30 AM - 10:30 AM (Daily)
+  - Lunch: 11:30 AM - 2:30 PM (Mon-Fri)
+  - Dinner: 5:30 PM - 10:00 PM (Daily)
+- Specialties: Prime steaks, fresh seafood, craft cocktails
+- Dress Code: Smart casual
+- Reservations: Recommended
+
+### Riverside Café
+- Cuisine: Casual dining, sandwiches, salads
+- Hours: 7:00 AM - 11:00 PM (Daily)
+- Features:
+  - Grab-and-go options
+  - Outdoor patio seating
+  - Breakfast all day
+  - Free Wi-Fi
+  - Kid-friendly menu
+
+### Skyline Lounge (Rooftop Bar)
+- Type: Bar & Lounge
+- Hours: 4:00 PM - 1:00 AM (Daily)
+- Features:
+  - Signature cocktails
+  - Small plates and appetizers
+  - Live music (Friday & Saturday)
+  - Panoramic city views
+  - Age 21+ after 9 PM
+
+### Room Service
+- Hours: 24/7
+- Delivery fee: $5
+- Menu: Abbreviated menu available 24/7, full menu 6 AM - 11 PM
+
+---
+
+## Hotel Amenities
+
+### Fitness & Wellness
+- **Fitness Center**: 24/7 access, modern equipment, free weights
+- **Indoor Pool**: 6 AM - 10 PM daily, heated year-round
+- **Spa Services**: Massage, facials, body treatments (by appointment)
+- **Sauna & Steam Room**: Located in fitness center
+
+### Business Facilities
+- **Business Center**: 24/7 access, printing, scanning, computers
+- **Meeting Rooms**: 5 rooms accommodating 10-100 people
+- **Ballroom**: Capacity 300 people, catering available
+- **Free Wi-Fi**: Throughout the hotel
+- **A/V Equipment**: Available for rental
+
+### Other Amenities
+- **Valet Parking**: $35/night
+- **Self-Parking**: $20/night
+- **Airport Shuttle**: Complimentary, scheduled service
+- **Concierge**: 7 AM - 11 PM daily
+- **ATM**: In lobby
+- **Gift Shop**: 7 AM - 9 PM daily
+- **Laundry Service**: Same-day service available
+- **Pet-Friendly**: Up to 40 lbs, $50/stay fee
+
+---
+
+## Policies
+
+### Check-In / Check-Out
+- **Check-in**: 3:00 PM
+- **Check-out**: 12:00 PM (Noon)
+- Early check-in: Subject to availability, possible fee
+- Late check-out: Subject to availability, $50 after 2 PM
+
+### Cancellation Policy
+- **Standard Rate**: Free cancellation up to 48 hours before arrival
+- **Non-Refundable Rate**: No cancellations or changes allowed
+- **Group Bookings**: Contact group sales for specific policies
+- Cancellations within 48 hours: Charge of first night's stay
+
+### Payment & Deposits
+- Credit card required at booking
+- $50/night incidental deposit required at check-in
+- Accepted cards: Visa, Mastercard, American Express, Discover
+- Cash accepted with additional deposit
+
+### Age Requirements
+- Guests must be 21+ to check in
+- Minors allowed with adult guardian
+
+### Smoking Policy
+- 100% non-smoking hotel
+- Designated outdoor smoking areas available
+- $250 cleaning fee for smoking in room
+
+### Pet Policy
+- Dogs and cats welcome (up to 40 lbs)
+- Maximum 2 pets per room
+- $50 non-refundable pet fee per stay
+- Pets must not be left unattended in room
+
+---
+
+## Location & Transportation
+
+### Nearby Attractions
+- **Great American Ball Park**: 0.5 miles (home of Cincinnati Reds)
+- **Fountain Square**: 0.3 miles
+- **Cincinnati Music Hall**: 1.2 miles
+- **Cincinnati Zoo**: 3.5 miles
+- **Kings Island Amusement Park**: 24 miles
+- **Newport Aquarium**: 2 miles
+
+### Transportation
+- **Airport**: Cincinnati/Northern Kentucky International Airport (CVG) - 13 miles
+- **Complimentary Airport Shuttle**: Every 30 minutes, 5 AM - 11 PM
+- **Metro Bus Stop**: Outside main entrance
+- **Streetcar Station**: 2 blocks away
+- **Taxi Stand**: At main entrance
+- **Uber/Lyft**: Pickup at main entrance
+
+### Directions
+**From Airport (CVG):**
+Take I-275 N to I-71 N. Take exit 1 for downtown Cincinnati. Turn right on Main Street. Hotel is on the right.
+
+**From North (via I-75):**
+Take I-75 S to I-71 S. Take exit 1 for downtown. Turn left on Main Street.
+
+---
+
+## Special Services
+
+### Events & Conferences
+- 15,000 sq ft of meeting space
+- Dedicated event coordinator
+- Catering packages available
+- A/V equipment and IT support
+- Breakout rooms and boardrooms
+- Wedding packages available
+
+### Group Rates
+- 10+ rooms: 10% discount
+- 20+ rooms: 15% discount
+- Contact group sales: groups@cincinnatihotel.com
+
+### Loyalty Program
+**Cincinnati Rewards Members:**
+- Free Wi-Fi (standard rate for non-members)
+- 10% discount on dining
+- Late checkout (2 PM, subject to availability)
+- Earn points: 10 points per $1 spent
+- Redeem: 10,000 points = free night
+
+---
+
+## Seasonal Information
+
+### Best Time to Visit
+- **Spring (April-May)**: Pleasant weather, festivals
+- **Summer (June-August)**: Baseball season, outdoor events
+- **Fall (September-October)**: Beautiful foliage, Oktoberfest
+- **Winter (November-March)**: Holiday events, lower rates
+
+### Holiday Rates
+- Premium rates apply during:
+  - New Year's Eve
+  - Cincinnati Reds opening day
+  - Major conventions
+  - Oktoberfest weekend
+  - Major holidays
+
+---
+
+## COVID-19 Protocols
+
+- Enhanced cleaning procedures
+- Hand sanitizer stations throughout hotel
+- Social distancing markers in public areas
+- Contactless check-in/out available
+- Mobile room keys via app
+- Masks available upon request
+
+---
+
+## Contact Information
+
+**General Inquiries:**  
+Phone: +1 (513) 555-0100  
+Email: info@cincinnatihotel.com
+
+**Reservations:**  
+Phone: +1 (513) 555-0101  
+Email: reservations@cincinnatihotel.com  
+Hours: 24/7
+
+**Group Sales:**  
+Phone: +1 (513) 555-0102  
+Email: groups@cincinnatihotel.com  
+Hours: Mon-Fri 9 AM - 5 PM
+
+**Events & Catering:**  
+Phone: +1 (513) 555-0103  
+Email: events@cincinnatihotel.com  
+Hours: Mon-Fri 9 AM - 5 PM
+
+**Concierge:**  
+Phone: +1 (513) 555-0104  
+Email: concierge@cincinnatihotel.com  
+Hours: 7 AM - 11 PM daily
+
+---
+
+## Awards & Recognition
+
+- TripAdvisor Certificate of Excellence (2020, 2021, 2022)
+- AAA Four Diamond Award
+- Condé Nast Traveler Readers' Choice Award
+- Forbes Travel Guide Recommended
+- Certified Green Hotel by Green Key Global
+
+---
+
+*Last Updated: June 2026*  
+*This is a sample document for testing purposes. All information is fictional.*
