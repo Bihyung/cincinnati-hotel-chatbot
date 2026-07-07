@@ -39,11 +39,23 @@ class StatisticsService {
       topicBreakdown[key] = value;
     });
     
+    // Calculate average session duration
+    const sessions = await ChatSession.find();
+    let avgSessionDuration = 0;
+    if (sessions.length > 0) {
+      const totalDuration = sessions.reduce((sum, session) => {
+        const duration = (new Date(session.lastActivity) - new Date(session.startedAt)) / 1000; // in seconds
+        return sum + duration;
+      }, 0);
+      avgSessionDuration = Math.round(totalDuration / sessions.length);
+    }
+    
     return {
       totalSessions: stats.totalSessions,
       totalQuestions: stats.totalQuestions,
       topicBreakdown,
       unansweredQuestions: stats.unansweredQuestions,
+      avgSessionDuration,
       lastUpdated: stats.lastUpdated
     };
   }

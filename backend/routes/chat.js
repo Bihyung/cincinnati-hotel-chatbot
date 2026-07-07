@@ -62,8 +62,15 @@ router.post('/message', async (req, res) => {
     });
     session.lastActivity = new Date();
     
-    // Categorize the question
-    const topic = await ragService.categorizeQuestion(message);
+    // Categorize the question (with fallback)
+    let topic = 'General';
+    try {
+      topic = await ragService.categorizeQuestion(message);
+      console.log('[Chat] Question categorized as:', topic);
+    } catch (error) {
+      console.error('[Chat] Error categorizing question:', error);
+      topic = 'General';
+    }
     session.messages[session.messages.length - 1].topic = topic;
     
     // Search for relevant chunks
