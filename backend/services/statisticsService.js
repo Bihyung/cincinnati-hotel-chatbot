@@ -49,10 +49,19 @@ class StatisticsService {
   }
 
   async getRecentSessions(limit = 10) {
-    return await ChatSession.find()
+    const sessions = await ChatSession.find()
       .sort({ lastActivity: -1 })
       .limit(limit)
-      .select('sessionId startedAt lastActivity messages.length userType');
+      .select('sessionId startedAt lastActivity messages userType');
+    
+    // Format sessions with message count
+    return sessions.map(session => ({
+      sessionId: session.sessionId,
+      startedAt: session.startedAt,
+      lastActivity: session.lastActivity,
+      messageCount: session.messages.length,
+      userType: session.userType
+    }));
   }
 }
 
