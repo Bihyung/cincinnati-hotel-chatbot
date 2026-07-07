@@ -1,0 +1,129 @@
+{
+  "name": "Contact Form Handler",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "contact-form",
+        "responseMode": "responseNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "8c3a38f0-8ca3-4baf-8a68-c45f5975e41a",
+      "name": "Webhook",
+      "webhookId": "cbf6bfc7-eec6-4d2a-9f12-dd8375e78066"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://cincinnati-hotel-chatbot-production.up.railway.app/api/chat/contact",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"sessionId\": \"={{ $json.sessionId }}\",\n  \"name\": \"={{ $json.name }}\",\n  \"phone\": \"={{ $json.phone }}\",\n  \"email\": \"={{ $json.email }}\",\n  \"question\": \"={{ $json.question }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "67fc0404-353e-4fc7-81b6-415ee6ce9cfe",
+      "name": "HTTP Request"
+    },
+    {
+      "parameters": {
+        "sendTo": "idan@tauga.ai, deleonajiraydiego@gmail.com",
+        "subject": "=Cincinnati Hotel - Contact Request from ={{ $node[\"Webhook\"].json[\"name\"] }}",
+        "message": "=<h2>Cincinnati Hotel - Guest Contact Request</h2>\n<p>A guest could not get their question answered by the AI assistant.</p>\n\n<h3>Contact Details:</h3>\n<ul>\n  <li><strong>Name:</strong> {{ $node[\"Webhook\"].json[\"name\"] }}</li>\n  <li><strong>Phone:</strong> {{ $node[\"Webhook\"].json[\"phone\"] }}</li>\n  <li><strong>Email:</strong> {{ $node[\"Webhook\"].json[\"email\"] }}</li>\n</ul>\n\n<h3>Unanswered Question:</h3>\n<p>{{ $node[\"Webhook\"].json[\"question\"] }}</p>\n\n<p><em>Please follow up with this guest as soon as possible.</em></p>",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.gmail",
+      "typeVersion": 2.2,
+      "position": [
+        416,
+        0
+      ],
+      "id": "abaa0e50-9616-4257-8766-dd9b94afb57b",
+      "name": "Send a message",
+      "webhookId": "0c2efbfa-32bc-4cdf-baa0-17bc7e8d69df",
+      "credentials": {
+        "gmailOAuth2": {
+          "id": "kT2Fcwapg2RyLVX3",
+          "name": "Gmail OAuth2 API"
+        }
+      },
+      "disabled": true
+    },
+    {
+      "parameters": {
+        "respondWith": "json",
+        "responseBody": "{\n  \"success\": true,\n  \"message\": \"Contact form submitted successfully. Our team will reach out to you shortly.\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.respondToWebhook",
+      "typeVersion": 1.5,
+      "position": [
+        624,
+        0
+      ],
+      "id": "2245778a-5348-43d5-8c1e-2fa692040d94",
+      "name": "Respond to Webhook"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        [
+          {
+            "node": "Send a message",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "Send a message": {
+      "main": [
+        [
+          {
+            "node": "Respond to Webhook",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "05eb703b-11b6-4deb-b866-608495baa74f",
+  "meta": {
+    "templateCredsSetupCompleted": true,
+    "instanceId": "94c563ec81ce298a27778df78b345930a4b5c674a22be43632d81a6a71c1305a"
+  },
+  "nodeGroups": [],
+  "id": "xoDLTTJTmcWmmVuf",
+  "tags": []
+}

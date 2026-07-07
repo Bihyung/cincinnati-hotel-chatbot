@@ -1,0 +1,69 @@
+{
+  "name": "chat message handler",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "chat-messasge",
+        "responseMode": "lastNode",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "9eb2bd29-4f31-4d43-b203-67cb76280504",
+      "name": "Webhook",
+      "webhookId": "476563a0-9a8b-4545-af36-60739d30402d"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://cincinnati-hotel-chatbot-production.up.railway.app/api/chat/message",
+        "sendBody": true,
+        "specifyBody": "json",
+        "jsonBody": "={\n  \"sessionId\": \"{{ $json.body.sessionId }}\",\n  \"message\": \"{{ $json.body.message }}\"\n}",
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        224,
+        0
+      ],
+      "id": "c26e7024-78b7-4d46-a6f6-063c31d87d12",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false,
+    "timeSavedMode": "fixed",
+    "callerPolicy": "workflowsFromSameOwner"
+  },
+  "versionId": "4401413e-67cd-4baa-af75-229741eb65b8",
+  "meta": {
+    "instanceId": "94c563ec81ce298a27778df78b345930a4b5c674a22be43632d81a6a71c1305a"
+  },
+  "nodeGroups": [],
+  "id": "q7lEP6q4tMeDrOPP",
+  "tags": []
+}

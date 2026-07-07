@@ -1,0 +1,82 @@
+{
+  "name": "Document Upload Handler",
+  "nodes": [
+    {
+      "parameters": {
+        "httpMethod": "POST",
+        "path": "document-upload",
+        "responseMode": "lastNode",
+        "options": {
+          "binaryPropertyName": "file"
+        }
+      },
+      "type": "n8n-nodes-base.webhook",
+      "typeVersion": 2.1,
+      "position": [
+        0,
+        0
+      ],
+      "id": "53fcd4d4-5ece-4ade-a536-7cefc0bd9d0e",
+      "name": "Webhook",
+      "webhookId": "d6fd8d92-5a50-480d-9860-3029cdde8081"
+    },
+    {
+      "parameters": {
+        "method": "POST",
+        "url": "https://cincinnati-hotel-chatbot-production.up.railway.app/api/document/upload",
+        "sendBody": true,
+        "contentType": "multipart-form-data",
+        "bodyParameters": {
+          "parameters": [
+            {
+              "parameterType": "formBinaryData",
+              "name": "file",
+              "inputDataFieldName": "file0"
+            }
+          ]
+        },
+        "options": {}
+      },
+      "type": "n8n-nodes-base.httpRequest",
+      "typeVersion": 4.4,
+      "position": [
+        208,
+        0
+      ],
+      "id": "52f59734-1936-4eb5-88f5-64af63aa710d",
+      "name": "HTTP Request"
+    }
+  ],
+  "pinData": {},
+  "connections": {
+    "Webhook": {
+      "main": [
+        [
+          {
+            "node": "HTTP Request",
+            "type": "main",
+            "index": 0
+          }
+        ]
+      ]
+    },
+    "HTTP Request": {
+      "main": [
+        []
+      ]
+    }
+  },
+  "active": false,
+  "settings": {
+    "executionOrder": "v1",
+    "binaryMode": "separate",
+    "availableInMCP": false
+  },
+  "versionId": "4126ba4e-dda7-402f-8cff-d8f660b73cda",
+  "meta": {
+    "instanceId": "94c563ec81ce298a27778df78b345930a4b5c674a22be43632d81a6a71c1305a"
+  },
+  "nodeGroups": [],
+  "id": "91zSpgGgTs5CqhkA",
+  "tags": []
+}
